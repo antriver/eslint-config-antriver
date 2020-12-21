@@ -1,22 +1,23 @@
 {
-  "name": "@antriver/eslint-config-antriver",
-  "version": "1.0.0",
-  "description": "This is a standard code style for Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antriver/eslint-config-antriver.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://github.com/antriver/eslint-config-antriver#readme",
-  "dependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsdoc": "^20.4.0"
-  }
+    "name": "@antriver/eslint-config-antriver",
+    "version": "1.0.0",
+    "description": "This is a standard code style for Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/antriver/eslint-config-antriver.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "private": false,
+    "homepage": "https://github.com/antriver/eslint-config-antriver#readme",
+    "dependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "14.0.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsdoc": "^20.4.0"
+    }
 }
