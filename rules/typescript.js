@@ -1,4 +1,8 @@
 module.exports = {
+    rules: {
+        // Turn off for JS files.
+        '@typescript-eslint/explicit-function-return-type': 'off',
+    },
     overrides: [
         {
             files: ['*.ts', '*.tsx'],
