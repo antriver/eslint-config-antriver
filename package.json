@@ -1,7 +1,7 @@
 {
     "name": "@antriver/eslint-config-antriver",
-    "version": "1.0.1",
-    "description": "This is a standard code style for Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
+    "version": "1.0.2",
+    "description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
