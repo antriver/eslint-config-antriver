@@ -50,9 +50,10 @@ module.exports = {
         'import/order': 'off',
 
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+        // Prefer a named export always instead of a default export.
         'import/prefer-default-export': 'off',
 
-        // Indent with 4 spaces
+        // Indent with 4 spaces.
         indent: [
             'error',
             4,
@@ -106,10 +107,10 @@ module.exports = {
             'off',
         ],
 
-        // Set maximum line length to 120 to match PSR-2
+        // Set maximum line length to 120.
         // https://eslint.org/docs/rules/max-len
         'max-len': [
-            // Turn severity down from airbnb's error to warn
+            // Turn severity down from Airbnb's error to warn
             'warn',
             120,
             2,
@@ -220,8 +221,11 @@ module.exports = {
             ExportDeclaration: { minProperties: 4, multiline: true, consistent: true },
         }],
 
-        // Disable converting `let a = data.a` to `let {a} = data`. It's too big of a change at present.
-        // TODO: Can be removed if we decide we prefer that way.
+        // Disable forcing (but still allow) the use of destructing:
+        // let {a} = data;
+        // instead of
+        // let a = data.a;
+        // https://eslint.org/docs/rules/prefer-destructuring
         'prefer-destructuring': [
             'off',
         ],
@@ -233,12 +237,13 @@ module.exports = {
             'off',
         ],
 
-        // Disable using template literals instead of string concatenation.
+        // Disable forcing template literals instead of string concatenation.
         // https://eslint.org/docs/rules/prefer-template
         'prefer-template': [
             'off',
         ],
 
+        // Disable forcing variable Declarations to be at the top of their scope.
         // https://eslint.org/docs/rules/vars-on-top
         'vars-on-top': 'off',
     },

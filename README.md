@@ -54,6 +54,23 @@ The `vue.js` file contains extra rules to use with a Vue project. Add it to your
         ]
     }
 
+And add the `vue` plugin to your list of plugins:
+
+    plugins: [
+        'vue',
+    ],
+
 You'll also need to install these:
 
     npm install eslint-plugin-vue@latest --save-dev
+
+### Typescript
+
+The `typescript.js` file contains extra rules to use with a Typescript project. Add it to your extends list **in addition to** the base like this:
+
+    {
+        "extends": [
+            "@antriver/eslint-config-antriver",
+            "@antriver/eslint-config-antriver/typescript"
+        ]
+    }
