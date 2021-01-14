@@ -1,8 +1,11 @@
 module.exports = {
     rules: {
-        // Turn off for JS files (gets turned back on for ts files below).
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-var-requires': 'off',
     },
     overrides: [
@@ -13,14 +16,6 @@ module.exports = {
                 // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md#how-to-use
                 'no-shadow': 'off',
                 '@typescript-eslint/no-shadow': ['error'],
-
-                '@typescript-eslint/ban-ts-comment': 'off',
-                '@typescript-eslint/ban-ts-ignore': 'off',
-
-                '@typescript-eslint/no-empty-function': 'off',
-
-                '@typescript-eslint/no-explicit-any': 'off',
-                '@typescript-eslint/explicit-module-boundary-types': 'off',
 
                 '@typescript-eslint/explicit-function-return-type': 'error',
 
