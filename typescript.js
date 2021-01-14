@@ -17,6 +17,8 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
 
+        '@typescript-eslint/explicit-function-return-type': 'error',
+
         // eslint calls a constructor that has property initialisation (private/protected/public prefixes on the params)
         // a useless constructor. But it does do stuff.
         'no-useless-constructor': 'off',
