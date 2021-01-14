@@ -1,10 +1,10 @@
 module.exports = {
     // airbnb-base has all the ES6 rules without the React stuff
-    extends: 'eslint-config-airbnb-base',
+    // extends: 'eslint-config-airbnb-base',
 
-    plugins: [
-        'jsdoc',
-    ],
+    // plugins: [
+    //     'jsdoc',
+    // ],
 
     rules: {
         // Disable Airbnb's desire to convert:
