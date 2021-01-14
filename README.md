@@ -13,7 +13,7 @@ or
 
 ## Usage
 
-Simply extend the config in your `.eslintrc` or `.eslintrc.js`.
+Extend the config in your `.eslintrc`
 
 Example .eslintrc:
 
@@ -46,52 +46,35 @@ Add add this to your eslint config:
 
 ### Vue
 
-The `vue.js` file contains extra rules to use with a Vue project. Add it to your extends list **in addition to** the base like this.
-It no longer extends any base file because this caused issues with the parser options being changed when using it with Vue, so add that too.
+If you are using Vue extend this instead:
 
     {
         "extends": [
-            "@antriver/eslint-config-antriver",
-            "plugin:vue/recommended",
-            "@antriver/eslint-config-antriver/vue"
+            "@antriver/eslint-config-antriver/vue",
         ]
     }
 
-And add the `vue` plugin to your list of plugins:
-
-    plugins: [
-        'vue',
-    ],
-
-You'll also need to install these:
+You'll also need to install:
 
     npm install eslint-plugin-vue@latest --save-dev
 
 ### Typescript
 
-The `typescript.js` file contains extra rules to use with a Typescript project.
-It no longer extends any base file because this caused issues with the parser options being changed when using it with Vue, so add that too.
-Add it to your extends list **in addition to** the base like this:
+If you are using Typescript extend this instead:
 
     {
         "extends": [
-            "@antriver/eslint-config-antriver",
-
-            "plugin:@typescript-eslint/recommended",
-            "@antriver/eslint-config-antriver/typescript"
+            "@antriver/eslint-config-antriver/typescript",
         ]
     }
 
-or with Vue:
+### Vue & Typescript
+
+If you are using both Vue (created by vue-cli) and Typescript extend this instead.
+Do not extend both "/vue" and "/typescript" because you'll get a mess of conflicting parser options.
 
     {
         extends: [
-            '@antriver/eslint-config-antriver',
-
-            'plugin:vue/recommended',
-            '@antriver/eslint-config-antriver/vue',
-
-            '@vue/typescript/recommended',
-            '@antriver/eslint-config-antriver/typescript',
+            "@antriver/eslint-config-antriver/vue-typescript",
         ],
     }
