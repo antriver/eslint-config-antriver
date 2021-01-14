@@ -25,6 +25,8 @@ module.exports = {
 
                 // Don't require params in jsdoc with typescript.
                 'jsdoc/require-param': 'off',
+
+                '@typescript-eslint/no-var-requires': 'off',
             },
         },
     ],

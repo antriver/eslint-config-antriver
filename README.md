@@ -1,5 +1,8 @@
 # eslint config
 
+This has been split up so you can use the rules without any settings, because using it alongside Vue CLI generated
+projects was proving very difficult. Or you can extend one of the ready made configs.
+
 ## Install
 
     npm install @antriver/eslint-config-antriver --save-dev
