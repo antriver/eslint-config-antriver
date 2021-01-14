@@ -21,5 +21,8 @@ module.exports = {
         // a useless constructor. But it does do stuff.
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
+
+        // Don't require params in jsdoc with typescript.
+        'jsdoc/require-param': 'off',
     },
 };
