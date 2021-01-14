@@ -7,7 +7,7 @@ module.exports = {
         '@vue/typescript/recommended',
 
         './rules/base.js',
-        './rules/vue.ts',
+        './rules/vue.js',
         './rules/typescript.js',
     ],
 
