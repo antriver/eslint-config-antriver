@@ -1,6 +1,6 @@
 {
     "name": "@antriver/eslint-config-antriver",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "This is a standard code style for Javascript, based on eslint-config-airbnb-base with some tweaks.",
     "main": "index.js",
     "scripts": {
