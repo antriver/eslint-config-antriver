@@ -1,7 +1,7 @@
 module.exports = {
-    extends: [
-        'plugin:vue/recommended',
-    ],
+    // extends: [
+    //     'plugin:vue/recommended',
+    // ],
     rules: {
         // No line break before closing >
         //

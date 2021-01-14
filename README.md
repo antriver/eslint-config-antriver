@@ -1,7 +1,5 @@
 # eslint config
 
-This is designed to be used with ES6 code. For `app` everything is run through Webpack so there's no concern about browser support. For `epos` Webpack does not parse the code (yet) and the ES6 runs natively in the browser so there are some rules to cater for that.
-
 ## Install
 
     npm install @antriver/eslint-config-antriver --save-dev
@@ -45,11 +43,13 @@ Add add this to your eslint config:
 
 ### Vue
 
-The `vue.js` file contains extra rules to use with a Vue project. Add it to your extends list **in addition to** the base like this:
+The `vue.js` file contains extra rules to use with a Vue project. Add it to your extends list **in addition to** the base like this.
+It no longer extends any base file because this caused issues with the parser options being changed when using it with Vue, so add that too.
 
     {
         "extends": [
             "@antriver/eslint-config-antriver",
+            "plugin:vue/recommended",
             "@antriver/eslint-config-antriver/vue"
         ]
     }
@@ -66,11 +66,29 @@ You'll also need to install these:
 
 ### Typescript
 
-The `typescript.js` file contains extra rules to use with a Typescript project. Add it to your extends list **in addition to** the base like this:
+The `typescript.js` file contains extra rules to use with a Typescript project.
+It no longer extends any base file because this caused issues with the parser options being changed when using it with Vue, so add that too.
+Add it to your extends list **in addition to** the base like this:
 
     {
         "extends": [
             "@antriver/eslint-config-antriver",
+
+            "plugin:@typescript-eslint/recommended",
             "@antriver/eslint-config-antriver/typescript"
         ]
+    }
+
+or with Vue:
+
+    {
+        extends: [
+            '@antriver/eslint-config-antriver',
+
+            'plugin:vue/recommended',
+            '@antriver/eslint-config-antriver/vue',
+
+            '@vue/typescript/recommended',
+            '@antriver/eslint-config-antriver/typescript',
+        ],
     }

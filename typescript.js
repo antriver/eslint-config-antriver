@@ -1,8 +1,7 @@
 module.exports = {
-    extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-    ],
+    // extends: [
+    //     'plugin:@typescript-eslint/recommended',
+    // ],
     rules: {
         // Fix incorrectly reported errors with Typescript enums:
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md#how-to-use
