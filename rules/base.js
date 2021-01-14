@@ -239,5 +239,8 @@ module.exports = {
         // Disable forcing variable Declarations to be at the top of their scope.
         // https://eslint.org/docs/rules/vars-on-top
         'vars-on-top': 'off',
+
+        'no-await-in-loop': 'off',
+        'radix': 'off',
     },
 };
