@@ -1,7 +1,9 @@
 module.exports = {
     rules: {
-        // Turn off for JS files.
+        // Turn off for JS files (gets turned back on for ts files below).
         '@typescript-eslint/explicit-function-return-type': 'off',
+
+        '@typescript-eslint/no-var-requires': 'off',
     },
     overrides: [
         {
@@ -29,8 +31,6 @@ module.exports = {
 
                 // Don't require params in jsdoc with typescript.
                 'jsdoc/require-param': 'off',
-
-                '@typescript-eslint/no-var-requires': 'off',
             },
         },
     ],
