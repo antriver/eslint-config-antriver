@@ -7,6 +7,9 @@ module.exports = {
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-var-requires': 'off',
+
+        // This is broken.
+        '@typescript-eslint/no-unused-vars': 'off',
     },
     overrides: [
         {
@@ -17,7 +20,8 @@ module.exports = {
                 'no-shadow': 'off',
                 '@typescript-eslint/no-shadow': ['error'],
 
-                '@typescript-eslint/explicit-function-return-type': 'error',
+                // Seemed like a good idea but it gets annoying to have to put void return types everywhere.
+                '@typescript-eslint/explicit-function-return-type': 'off',
 
                 // eslint calls a constructor that has property initialisation (private/protected/public prefixes
                 // on the params) a useless constructor. But it does do stuff.
