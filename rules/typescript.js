@@ -26,6 +26,16 @@ module.exports = {
 
                 // Don't require params in jsdoc with typescript.
                 'jsdoc/require-param': 'off',
+
+                // Require type annotations to be spaced like this:
+                // (varName: type): returnType
+                '@typescript-eslint/type-annotation-spacing': [
+                    'error',
+                    {
+                        before: false,
+                        after: true,
+                    },
+                ],
             },
         },
     ],
