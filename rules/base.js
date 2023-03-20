@@ -29,6 +29,8 @@ module.exports = {
 
         'func-names': 'off',
 
+        'function-paren-newline': ['error', 'consistent'],
+
         // Set if file extensions (.js, .vue) should be there when importing a file.
         'import/extensions': ['error', 'always', {
             ts: 'never',
@@ -134,6 +136,8 @@ module.exports = {
         // Allow window.alert for lazy messages.
         'no-alert': 'off',
 
+        'no-await-in-loop': 'off',
+
         // Allow console.log etc.
         'no-console': 'off',
 
@@ -236,11 +240,12 @@ module.exports = {
             'off',
         ],
 
+        'quote-props': ['error', 'consistent-as-needed'],
+
+        'radix': 'off',
+
         // Disable forcing variable Declarations to be at the top of their scope.
         // https://eslint.org/docs/rules/vars-on-top
         'vars-on-top': 'off',
-
-        'no-await-in-loop': 'off',
-        'radix': 'off',
     },
 };

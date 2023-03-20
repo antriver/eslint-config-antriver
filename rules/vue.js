@@ -1,5 +1,10 @@
 module.exports = {
     rules: {
+        'vue/first-attribute-linebreak': ['error', {
+            singleline: 'beside',
+            multiline: 'beside',
+        }],
+
         // No line break before closing >
         //
         // <div
@@ -44,12 +49,15 @@ module.exports = {
         //     lorem="1"
         //     ipsum="2" <!-- Not like this -->
         'vue/max-attributes-per-line': ['error', {
-            singleline: 1,
+            singleline: {
+                max: 1,
+            },
             multiline: {
                 max: 1,
-                allowFirstLine: true,
             },
         }],
+
+        'vue/multi-word-component-names': 'off',
     },
     overrides: [
         // For .vue files disable the indent rule otherwise there are errors about indentation in <script> tags.
