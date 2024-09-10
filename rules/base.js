@@ -49,7 +49,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
 
         // Indent with 4 spaces.
-        indent: [
+        'indent': [
             'error',
             4,
             {
@@ -89,6 +89,15 @@ module.exports = {
         // "jsdoc/require-returns-check": [
         //    "error"
         // ],
+
+        // Require a blank line between the description and tags in a jsdoc.
+        'jsdoc/tag-lines': [
+            'error',
+            'any',
+            {
+                startLines: 1,
+            },
+        ],
 
         // Disable: Line comments should go above the line not on the same line.
         // Sometimes it's useful to have the comment on the same line.
