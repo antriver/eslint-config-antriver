@@ -10,6 +10,15 @@ module.exports = {
 
         // This is broken.
         '@typescript-eslint/no-unused-vars': 'off',
+
+        // Set if file extensions (.js, .vue) should be there when importing a file.
+        'import/extensions': ['error', 'always', {
+            ts: 'never',
+            js: 'never',
+            // Require the extension for .vue files because if you are using typescript with Vue and using
+            // aliases, tslint will complain about not finding the module.
+            vue: 'always',
+        }],
     },
     overrides: [
         {
